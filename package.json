@@ -1,0 +1,11 @@
+{
+  "name": "streetlight",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A source-backed corridor review demo for transportation planners.",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check app.js && node --check server.mjs"
+  },
+  "engines": { "node": ">=20" }
+}

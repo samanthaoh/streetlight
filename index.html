@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Streetlight helps transportation planners explore corridor evidence and prepare a review brief.">
+  <title>Streetlight · Corridor workspace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-icon" aria-hidden="true">↗</span> streetlight<span class="brand-tag">CORRIDOR INTELLIGENCE</span></a><span class="demo-badge"><i></i> Portfolio demo</span></header>
+  <main>
+    <div class="breadcrumb">WORKSPACE <span>/</span> FAIRFAX COUNTY, VA</div>
+    <section class="heading"><div><p class="eyebrow">A CLEARER PICTURE OF THE ROAD AHEAD</p><h1>Blake Lane<span class="route-label">CORRIDOR REVIEW</span></h1><p class="intro">Connect past findings to your next investigation.</p></div><button class="button dark" id="export">↓ Export brief</button></section>
+    <div class="context-bar"><span><i class="status-dot"></i> Historical evidence workspace</span><span>Source focus <strong>May 2023</strong></span><span>Fairfax County, Virginia</span></div>
+    <nav class="tabs" aria-label="Workspace views"><button class="tab active" data-view="explore" aria-current="page">Evidence explorer</button><button class="tab" data-view="brief">Investigation brief</button><button class="tab" data-view="sources">Source library</button></nav>
+    <section id="explore" class="view">
+      <div class="workspace">
+        <div class="question-panel">
+          <div class="section-label"><span class="tiny-icon">✳</span> EVIDENCE EXPLORER</div><h2>Start with a question.</h2><p class="muted">Explore documented concerns and plans, with the evidence close at hand.</p>
+          <form id="question-form"><label class="sr-only" for="question">Question about Blake Lane</label><textarea id="question" rows="3" placeholder="What should I review before the next field visit?" maxlength="800"></textarea><div class="form-footer"><span>Curated answers · no model connected</span><button type="submit" class="button dark">Explore <span>↗</span></button></div></form>
+          <p class="small-label">TRY A STARTING POINT</p><div id="suggestions" class="suggestions"></div>
+          <div class="scope-note"><strong>Evidence has a date.</strong><p>This demo uses selected findings from a 2023 presentation. It does not establish current road conditions or implementation status.</p></div>
+        </div>
+        <div class="answer-panel" id="answer" aria-live="polite"></div>
+      </div>
+      <section class="evidence-section"><div class="section-heading"><div><p class="eyebrow">FOLLOW THE SOURCE</p><h2>Evidence, within reach.</h2></div><span class="muted small">Select a citation above to highlight its evidence.</span></div><div id="evidence-cards" class="evidence-grid"></div></section>
+    </section>
+    <section id="brief" class="view" hidden><div class="brief-layout"><div><p class="eyebrow">PREPARE THE NEXT REVIEW</p><h2>Your investigation brief</h2><p class="muted">An editable starting point for a staff review. Changes are saved in this browser.</p><label class="small-label" for="brief-editor">WORKING NOTES</label><textarea id="brief-editor" rows="20" spellcheck="true"></textarea><div class="brief-actions"><span id="save-status" role="status"></span><button id="reset" class="button outline">Reset brief</button></div></div><aside class="scope-note"><strong>Before drawing conclusions</strong><p>Check the final audit and newer implementation records. The items in this brief are proposed investigation tasks, not engineering recommendations from a completed assessment.</p><p>Export downloads your current brief as a Markdown file.</p></aside></div></section>
+    <section id="sources" class="view" hidden><p class="eyebrow">THE DOCUMENT TRAIL</p><h2>Source library</h2><p class="muted">Public source links. Original documents are hosted by Fairfax County.</p><div id="source-list"></div></section>
+    <footer><span>streetlight <span class="footer-slash">/</span> From public records to better questions.</span><span>Blake Lane · Prototype 01</span></footer>
+  </main><script src="app.js" defer></script>
+</body>
+</html>

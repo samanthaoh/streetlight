@@ -1,0 +1,44 @@
+{
+  "status": "provisional_text_checked",
+  "source_id": "outreach-2023",
+  "source_date": "2023-05-30",
+  "page_numbering": "one-based PDF pages",
+  "limitations": [
+    "Based on web-reader text; original PDF is not downloaded.",
+    "Page screenshots failed; visual verification is pending.",
+    "Final audit has not been reviewed. These are historical observations, not current conditions."
+  ],
+  "cases": [
+    {
+      "id": "corridor-concerns",
+      "question": "What corridor-wide concerns were presented in May 2023?",
+      "page": 8,
+      "expected_points": ["Accessibility at some ramps and sidewalks", "Limited pedestrian cues for drivers", "Higher speeds during peak periods", "Large corner radii permitting faster turns", "Connections to trail systems"]
+    },
+    {
+      "id": "crossing-concerns",
+      "question": "What pedestrian crossing concerns were documented?",
+      "page": 9,
+      "expected_points": ["Multiple-threat conflicts at uncontrolled crossings", "Wide crossings", "Some transit stops misaligned with marked crosswalks"]
+    },
+    {
+      "id": "nighttime",
+      "question": "What nighttime concern was observed?",
+      "page": 11,
+      "expected_points": ["Difficulty seeing pedestrians in darkness"]
+    },
+    {
+      "id": "historical-plans",
+      "question": "Which crossing improvements were described as upcoming in May 2023?",
+      "page": 17,
+      "expected_points": ["Flashing beacons at Bushman Drive and Bel Glade Street", "Sutton Road intersection enhancements"],
+      "must_preserve": "Upcoming as of May 2023; completion is not established by this slide."
+    },
+    {
+      "id": "unsupported-current-status",
+      "question": "Are all of those planned improvements completed today?",
+      "page": null,
+      "expected_behavior": "Cannot determine from this historical presentation; request newer implementation records."
+    }
+  ]
+}
